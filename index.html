@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sudana Dahamneth - Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- Header / Navigation -->
+    <header>
+        <nav class="navbar">
+            <a href="#" class="logo">Portfolio.</a>
+            <ul class="nav-links">
+                <li><a href="#academics">Academics</a></li>
+                <li><a href="#certifications">Certifications</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#activities">Activities</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li>
+                    <!-- Clean Toggle Switch Button -->
+                    <button id="theme-toggle" aria-label="Toggle Theme">
+                        <i class="fas fa-moon"></i>
+                    </button>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero">
+        <div class="container hero-container">
+            <div class="hero-text">
+                <h1>Sudana Dahamneth</h1>
+                <p>I'm an undergraduate student passionate about Mathematics, Computer Science, Statistics, and Software Development. I enjoy exploring data, solving problems, and building projects that combine analytical thinking with practical solutions. Beyond academics and technology, I lead an active lifestyle and believe in discipline, consistency, and continuous self-improvement. I'm always curious to learn, experiment with new ideas, and grow both personally and professionally.</p>
+                <div class="hero-btns">
+                    <a href="#projects" class="btn primary">View Projects</a>
+                    <a href="#" class="btn secondary">Download CV</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <!-- Replace 'profile.jpg' with your actual photo filename inside your folder -->
+                <img src="profile.jpg" alt="Sudana Dahamneth" onerror="this.src='https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=500&auto=format&fit=crop&q=60'">
+            </div>
+        </div>
+    </section>
+
+    <!-- Academics Section -->
+    <section id="academics" class="section">
+        <div class="container">
+            <h2 class="section-title">Academic Background</h2>
+            <div class="card-grid">
+                <!-- University Card -->
+                <div class="card">
+                    <h3>University Studies</h3>
+                    <p>Pursuing a Bachelor of Science in Physical Science, specializing in <strong>Mathematics, Computer Science, and Statistics</strong> at the University of Sri Jayewardenepura.</p>
+                </div>
+
+                <!-- Advanced Level Card -->
+                <div class="card">
+                    <h3>G.C.E. Advanced Level</h3>
+                    <p>Completed in the Physical Science stream with results of <strong>BBC</strong> (Mathematics, Chemistry, Physics) and an A for English.</p>
+                    <button class="expand-btn" onclick="toggleDetails('al-details')">View Full Results ▼</button>
+                    <div id="al-details" class="expandable-content">
+                        <ul class="result-list">
+                            <li><span>Combined Mathematics:</span> <strong>B</strong></li>
+                            <li><span>Chemistry:</span> <strong>B</strong></li>
+                            <li><span>Physics:</span> <strong>C</strong></li>
+                            <li><span>English:</span> <strong>A</strong></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Ordinary Level Card -->
+                <div class="card">
+                    <h3>G.C.E. Ordinary Level</h3>
+                    <p>Successfully completed with strong performance across core subjects, languages, and aesthetic studies.</p>
+                    <button class="expand-btn" onclick="toggleDetails('ol-details')">View Full Results ▼</button>
+                    <div id="ol-details" class="expandable-content">
+                        <ul class="result-list">
+                            <li><span>Mathematics:</span> <strong>A</strong></li>
+                            <li><span>Sinhala:</span> <strong>A</strong></li>
+                            <li><span>Buddhism:</span> <strong>A</strong></li>
+                            <li><span>History:</span> <strong>A</strong></li>
+                            <li><span>Commerce & Accounting:</span> <strong>A</strong></li>
+                            <li><span>Health Studies:</span> <strong>A</strong></li>
+                            <li><span>Drama & Theatre:</span> <strong>A</strong></li>
+                            <li><span>Science:</span> <strong>B</strong></li>
+                            <li><span>English:</span> <strong>B</strong></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certifications Section -->
+    <section id="certifications" class="section bg-light">
+        <div class="container">
+            <h2 class="section-title">Certifications & Cloud Labs</h2>
+            <div class="card-grid">
+                <div class="card">
+                    <h3>AWS Academy Cloud Foundations</h3>
+                    <p>Core cloud concepts, architecture, security, and global AWS infrastructure fundamentals.</p>
+                </div>
+                <div class="card">
+                    <h3>AWS Cloud Security Foundations</h3>
+                    <p>Identity and access management (IAM), infrastructure protection, and security operations on AWS.</p>
+                </div>
+                <div class="card">
+                    <h3>Cloud Security Builder Lab</h3>
+                    <p>Hands-on practical implementation of security controls, threat mitigation, and secure cloud resource deployment.</p>
+                </div>
+                <div class="card">
+                    <h3>Microservices & CI/CD Pipeline Builder Lab</h3>
+                    <p>Practical deployment of containerized microservices and automated deployment pipelines in the cloud ecosystem.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills & Expertise Section -->
+    <section id="skills" class="section">
+        <div class="container">
+            <h2 class="section-title">Skills & Expertise</h2>
+            <div class="card-grid">
+                <!-- Technical Skills Badges -->
+                <div class="card">
+                    <h3>Technical Skills</h3>
+                    <div class="skills-grid">
+                        <span class="skill-badge"><i class="fab fa-java"></i> Java</span>
+                        <span class="skill-badge"><i class="fab fa-python"></i> Python</span>
+                        <span class="skill-badge"><i class="fas fa-code"></i> C</span>
+                        <span class="skill-badge"><i class="fab fa-js"></i> JavaScript</span>
+                        <span class="skill-badge"><i class="fab fa-php"></i> PHP</span>
+                        <span class="skill-badge"><i class="fab fa-node"></i> Node.js</span>
+                        <span class="skill-badge"><i class="fab fa-react"></i> React</span>
+                        <span class="skill-badge"><i class="fab fa-html5"></i> HTML5</span>
+                        <span class="skill-badge"><i class="fab fa-css3-alt"></i> CSS3</span>
+                        <span class="skill-badge"><i class="fas fa-server"></i> Spring Boot</span>
+                        <span class="skill-badge"><i class="fab fa-aws"></i> AWS</span>
+                        <span class="skill-badge"><i class="fab fa-docker"></i> Docker</span>
+                        <span class="skill-badge"><i class="fab fa-jenkins"></i> Jenkins</span>
+                        <span class="skill-badge"><i class="fas fa-database"></i> SQL / PostgreSQL</span>
+                        <span class="skill-badge"><i class="fas fa-vial"></i> Postman</span>
+                        <span class="skill-badge"><i class="fas fa-chart-line"></i> R & RMarkdown</span>
+                        <span class="skill-badge"><i class="fas fa-calculator"></i> Minitab & MATLAB</span>
+                        <span class="skill-badge"><i class="fas fa-square-root-variable"></i> Maple</span>
+                    </div>
+                </div>
+
+                <!-- Soft Skills Badges -->
+                <div class="card">
+                    <h3>Soft Skills</h3>
+                    <div class="skills-grid">
+                        <span class="skill-badge"><i class="fas fa-bolt"></i> Quick learner</span>
+                        <span class="skill-badge"><i class="fas fa-comments"></i> Good communication</span>
+                        <span class="skill-badge"><i class="fas fa-users"></i> Teamwork</span>
+                        <span class="skill-badge"><i class="fas fa-clock"></i> Time management</span>
+                        <span class="skill-badge"><i class="fas fa-sync-alt"></i> Adaptability</span>
+                        <span class="skill-badge"><i class="fas fa-lightbulb"></i> Problem-solving</span>
+                        <span class="skill-badge"><i class="fas fa-smile"></i> Positive attitude</span>
+                        <span class="skill-badge"><i class="fas fa-search"></i> Attention to detail</span>
+                        <span class="skill-badge"><i class="fas fa-graduation-cap"></i> Willingness to learn</span>
+                        <span class="skill-badge"><i class="fas fa-shield-alt"></i> Responsibility</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section bg-light">
+        <div class="container">
+            <h2 class="section-title">Featured Projects</h2>
+            <div class="card-grid">
+                <div class="card">
+                    <h3>Future Path</h3>
+                    <p>A job seeker web application developed using PHP, MySQL, and a structured MVC approach. Complete with user authentication and database management.</p>
+                </div>
+                <div class="card">
+                    <h3>Blood Donation Organization System</h3>
+                    <p>A service-oriented group project featuring Express REST API CRUD endpoints, containerized with Docker, automated using Jenkins pipelines, and tested via Postman.</p>
+                </div>
+                <div class="card">
+                    <h3>Data & Statistical Modeling</h3>
+                    <p>Analytical projects utilizing R, time-series forecasting, regression diagnostics, and data visualization tools to extract insights from complex datasets.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Activities & Interests Section -->
+    <section id="activities" class="section">
+        <div class="container">
+            <h2 class="section-title">Beyond Academics</h2>
+            <div class="card-grid">
+                <div class="card">
+                    <h3>Theatrical Stage Acting</h3>
+                    <p>Actively engaged in university theatrical stage productions, stepping into lead roles and performing live before audiences.</p>
+                </div>
+                <div class="card">
+                    <h3>Fitness & Routine</h3>
+                    <p>Committed to a disciplined weekly plan consisting of weightlifting and treadmill walking routine, constantly optimizing training and wellness.</p>
+                </div>
+                <div class="card">
+                    <h3>Interests & Hobbies</h3>
+                    <p>Passionate about traveling, exploring new places, and trying out new things. Outside of technology, I follow Formula 1, dive into sci-fi and thriller cinema, explore anime and manga storytelling, and enjoy high-energy electronic music.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section bg-light">
+        <div class="container text-center">
+            <h2 class="section-title">Let's Connect</h2>
+            <p>Have a question, want to collaborate, or just want to say hi? Feel free to reach out!</p>
+            <a href="mailto:sudanadahamneth07@gmail.com" class="btn primary email-btn">Send Me an Email</a>
+            
+            <!-- Social Icons List -->
+            <div class="social-icons">
+                <a href="https://www.linkedin.com/in/sudana-dahamneth-4219533a9?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                <a href="https://x.com/sudanadahamneth" target="_blank" aria-label="X (Twitter)"><i class="fa-solid fa-x"></i></a>
+                <a href="https://www.instagram.com/sudana.dahamneth?dlrf=YmF6cG5mMmZnaThy" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="https://github.com/sudanadahamneth" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Sudana Dahamneth. Built with HTML & CSS.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
